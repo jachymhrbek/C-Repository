@@ -1,7 +1,32 @@
 using System;
 
-class Program {
-    static void Main(){
-         Console.WriteLine("Hello world");
-    }
+class Program 
+{
+	static void Main(){
+        // THIS IS CALCULATOR    
+    
+		Console.WriteLine("Enter a number: ");
+		double num1 = Convert.ToDouble(Console.ReadLine());
+		
+		Console.WriteLine("Enter an operator: ")
+		string op = Console.ReadLine();
+
+		Console.WriteLine("Enter another number: ")
+		double num2 = Convert.ToDouble(Console.ReadLine());
+
+		if (op == "+") {
+			Console.WriteLine(num1 + num2);
+		} else if (op == "-") {
+			Console.WriteLine(num1 - num2);
+		} else if (op == "*") {
+			Console.WriteLine(num1 * num2);
+		} else if (op == "/") {
+			Console.WriteLine(num1 / num2);
+		} else if (op == "/" && num2 == "0") {
+			Console.WriteLine("Can't devide by zero");
+		} 
+		else {
+			Console.WriteLine("Invalid operator");
+		}
+	}
 }
