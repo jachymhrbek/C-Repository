@@ -2,8 +2,9 @@ using System;
 
 class Program 
 {
-	static void Main(){
-        // THIS IS CALCULATOR    
+	static void Main()
+	{
+        	// THIS IS "BETTER" CALCULATOR    
     
 		Console.WriteLine("Enter a number: ");
 		double num1 = Convert.ToDouble(Console.ReadLine());
@@ -26,7 +27,7 @@ class Program
 			Console.WriteLine("Can't devide by zero");
 		} 
 		else {
-			Console.WriteLine("Invalid operator");
+			Console.WriteLine("Invalid Operator or Number");
 		}
 	}
 }
